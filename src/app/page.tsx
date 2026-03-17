@@ -8,19 +8,19 @@ import { Sun, ChevronRight } from 'lucide-react';
 export default function Home() {
   const { t } = useTranslation();
   return (
-    <main 
+    <main
       className="min-h-screen bg-[#020617] text-slate-50 font-sans selection:bg-[#d4af37] selection:text-[#020617]"
       suppressHydrationWarning
     >
-      
+
       {/* Cinematic Background Elements */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
         <div className="absolute top-[-10%] right-[-10%] w-[60vw] h-[60vw] bg-[#d4af37]/5 rounded-full blur-[120px] animate-pulse-slow" />
         <div className="absolute bottom-[-20%] left-[-10%] w-[50vw] h-[50vw] bg-[#d4af37]/5 rounded-full blur-[100px]" />
-        
+
         {/* Subtle Gold Grid/Lines */}
-        <div className="absolute inset-0 opacity-[0.03]" 
-             style={{ backgroundImage: 'linear-gradient(to right, #d4af37 1px, transparent 1px), linear-gradient(to bottom, #d4af37 1px, transparent 1px)', backgroundSize: '60px 60px' }}>
+        <div className="absolute inset-0 opacity-[0.03]"
+          style={{ backgroundImage: 'linear-gradient(to right, #d4af37 1px, transparent 1px), linear-gradient(to bottom, #d4af37 1px, transparent 1px)', backgroundSize: '60px 60px' }}>
         </div>
       </div>
 
@@ -74,7 +74,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {(t('services.items', { returnObjects: true }) as { title: string; detail: string }[]).map((service, i) => (
               <div key={i} className="glass-star-led p-12 group transition-all duration-700 rounded-2xl border border-[#d4af37]/10 hover:border-[#d4af37]/40">
-                <span className="text-[#d4af37] text-[10px] tracking-[0.2em] font-serif italic mb-8 block opacity-60">0{i+1} / EXPERIENCE</span>
+                <span className="text-[#d4af37] text-[10px] tracking-[0.2em] font-serif italic mb-8 block opacity-60">0{i + 1} / EXPERIENCE</span>
                 <h3 className="font-serif text-2xl mb-6 group-hover:text-[#d4af37] transition-colors flex items-center justify-between">
                   {service.title}
                   <ChevronRight className="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-[#d4af37]" />
@@ -96,13 +96,13 @@ export default function Home() {
           </div>
           <div className="h-px w-24 bg-[#d4af37]/20 hidden md:block"></div>
           <div className="text-center">
-            <div className="text-5xl font-serif italic text-white mb-2">Elite</div>
+            <div className="text-5xl font-serif italic text-white mb-2">Elite+</div>
             <div className="text-[10px] text-slate-500 uppercase tracking-[0.3em] font-bold">{t('trust.certification')}</div>
           </div>
           <div className="h-px w-24 bg-[#d4af37]/20 hidden md:block"></div>
           <div className="text-center md:text-right">
-             <div className="text-5xl font-serif italic text-white mb-2">+10k</div>
-             <div className="text-[10px] text-slate-500 uppercase tracking-[0.3em] font-bold">{t('trust.trips')}</div>
+            <div className="text-5xl font-serif italic text-white mb-2">+10k</div>
+            <div className="text-[10px] text-slate-500 uppercase tracking-[0.3em] font-bold">{t('trust.trips')}</div>
           </div>
         </div>
       </section>
@@ -112,17 +112,17 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-8">
-               <div className="w-10 h-10 rounded-full border border-[#d4af37]/20 flex items-center justify-center bg-[#d4af37]/5">
-                 <Sun className="w-5 h-5 text-[#d4af37]" />
-               </div>
-               <div className="flex flex-col">
-                 <span className="font-serif text-sm tracking-[0.1em] font-light leading-none text-slate-400">
-                   Transportes
-                 </span>
-                 <span className="font-serif text-base tracking-[0.25em] font-bold text-[#d4af37] mt-1">
-                   EL SOL
-                 </span>
-               </div>
+              <div className="w-10 h-10 rounded-full border border-[#d4af37]/20 flex items-center justify-center bg-[#d4af37]/5">
+                <Sun className="w-5 h-5 text-[#d4af37]" />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-serif text-sm tracking-[0.1em] font-light leading-none text-slate-400">
+                  Transportes
+                </span>
+                <span className="font-serif text-base tracking-[0.25em] font-bold text-[#d4af37] mt-1">
+                  EL SOL
+                </span>
+              </div>
             </div>
             <p className="text-slate-600 max-w-xs text-sm font-light leading-relaxed italic">
               {t('footer.quote')}
@@ -139,13 +139,13 @@ export default function Home() {
           <div>
             <h4 className="text-[10px] uppercase tracking-[0.4em] font-bold text-[#d4af37] mb-8">{t('footer.contact_header')}</h4>
             <div className="text-slate-500 text-sm font-light leading-relaxed">
-              {t('footer.address')}<br/>
-              reservas@transol.vip<br/>
+              {t('footer.address')}<br />
+              reservas@transol.vip<br />
               +54 911 5050 VIP
             </div>
           </div>
         </div>
-        
+
         <div className="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[9px] uppercase tracking-[0.3em] text-slate-700 font-bold">
           <span>{t('footer.copyright', { year: new Date().getFullYear() })}</span>
           <div className="flex gap-8 mt-4 md:mt-0">
@@ -156,7 +156,8 @@ export default function Home() {
       </footer>
 
       {/* Playfair Display font import via style tag for simplicity in this demo */}
-      <style dangerouslySetInnerHTML={{__html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
       `}} />
 
