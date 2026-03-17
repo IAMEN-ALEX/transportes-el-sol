@@ -3,8 +3,7 @@
 import React from 'react';
 import HeroVideo from "../components/HeroVideo";
 import { useTranslation } from 'react-i18next';
-import { Sun, Menu, ChevronRight } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { Sun, ChevronRight } from 'lucide-react';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -73,7 +72,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {(t('services.items', { returnObjects: true }) as any[]).map((service, i) => (
+            {(t('services.items', { returnObjects: true }) as { title: string; detail: string }[]).map((service, i) => (
               <div key={i} className="glass-star-led p-12 group transition-all duration-700 rounded-2xl border border-[#d4af37]/10 hover:border-[#d4af37]/40">
                 <span className="text-[#d4af37] text-[10px] tracking-[0.2em] font-serif italic mb-8 block opacity-60">0{i+1} / EXPERIENCE</span>
                 <h3 className="font-serif text-2xl mb-6 group-hover:text-[#d4af37] transition-colors flex items-center justify-between">
