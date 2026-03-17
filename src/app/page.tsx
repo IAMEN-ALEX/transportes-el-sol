@@ -3,11 +3,16 @@
 import React from 'react';
 import HeroVideo from "../components/HeroVideo";
 import { useTranslation } from 'react-i18next';
+import { Sun, Menu, ChevronRight } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 export default function Home() {
   const { t } = useTranslation();
   return (
-    <main className="min-h-screen bg-[#020617] text-slate-50 font-sans selection:bg-[#d4af37] selection:text-[#020617]">
+    <main 
+      className="min-h-screen bg-[#020617] text-slate-50 font-sans selection:bg-[#d4af37] selection:text-[#020617]"
+      suppressHydrationWarning
+    >
       
       {/* Cinematic Background Elements */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
@@ -25,9 +30,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3 group cursor-pointer">
             <div className="w-10 h-10 rounded-full border border-[#d4af37]/30 flex items-center justify-center bg-[#d4af37]/5 group-hover:border-[#d4af37] transition-all duration-500 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
-              <svg className="w-5 h-5 text-[#d4af37]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
-              </svg>
+              <Sun className="w-5 h-5 text-[#d4af37] group-hover:rotate-90 transition-transform duration-700" />
             </div>
             <div className="flex flex-col">
               <span className="font-serif text-lg tracking-[0.15em] font-light leading-none text-slate-200">
@@ -43,7 +46,7 @@ export default function Home() {
             <a href="#" className="hover:text-[#d4af37] transition-all">{t('nav.destinations')}</a>
             <a href="#" className="hover:text-[#d4af37] transition-all">{t('nav.experience')}</a>
             <a href="#" className="hover:text-[#d4af37] transition-all">{t('nav.fleet')}</a>
-            <button className="px-6 py-2 border border-[#d4af37]/40 hover:border-[#d4af37] transition-all text-[#d4af37] tracking-[0.2em]">
+            <button className="btn-star-led px-8 py-2.5 rounded-full text-[#d4af37] tracking-[0.25em] font-bold">
               {t('nav.book')}
             </button>
           </div>
@@ -69,13 +72,16 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-0.5 bg-[#d4af37]/10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {(t('services.items', { returnObjects: true }) as any[]).map((service, i) => (
-              <div key={i} className="bg-[#020617] p-16 group hover:bg-[#0f172a] transition-all duration-700">
-                <span className="text-[#d4af37] text-xs font-serif italic mb-12 block">0{i+1} / EXPERIENCE</span>
-                <h3 className="font-serif text-3xl mb-8 group-hover:text-[#d4af37] transition-colors">{service.title}</h3>
-                <p className="text-slate-500 text-sm font-light leading-relaxed mb-12">{service.detail}</p>
-                <div className="w-10 h-[1px] bg-slate-800 group-hover:w-full group-hover:bg-[#d4af37] transition-all duration-700"></div>
+              <div key={i} className="glass-star-led p-12 group transition-all duration-700 rounded-2xl border border-[#d4af37]/10 hover:border-[#d4af37]/40">
+                <span className="text-[#d4af37] text-[10px] tracking-[0.2em] font-serif italic mb-8 block opacity-60">0{i+1} / EXPERIENCE</span>
+                <h3 className="font-serif text-2xl mb-6 group-hover:text-[#d4af37] transition-colors flex items-center justify-between">
+                  {service.title}
+                  <ChevronRight className="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-[#d4af37]" />
+                </h3>
+                <p className="text-slate-400 text-sm font-light leading-relaxed mb-10">{service.detail}</p>
+                <div className="h-0.5 w-0 bg-[#d4af37]/40 group-hover:w-full transition-all duration-700"></div>
               </div>
             ))}
           </div>
@@ -108,9 +114,7 @@ export default function Home() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-8">
                <div className="w-10 h-10 rounded-full border border-[#d4af37]/20 flex items-center justify-center bg-[#d4af37]/5">
-                 <svg className="w-5 h-5 text-[#d4af37]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
-                 </svg>
+                 <Sun className="w-5 h-5 text-[#d4af37]" />
                </div>
                <div className="flex flex-col">
                  <span className="font-serif text-sm tracking-[0.1em] font-light leading-none text-slate-400">

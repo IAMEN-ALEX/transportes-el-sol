@@ -18,9 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="scroll-smooth" suppressHydrationWarning>
-      <body className={`${inter.className} antialiased selection:bg-amber-500 selection:text-white`}>
+      <body 
+        className={`${inter.className} antialiased selection:bg-amber-500 selection:text-white`}
+        suppressHydrationWarning
+      >
         <I18nProvider>
-          <div className="fixed top-24 right-6 z-[60] animate-fade-in">
+          <div className="fixed top-24 right-6 z-[60]">
             <LanguageSwitcher />
           </div>
           {children}
