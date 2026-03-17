@@ -1,0 +1,49 @@
+{
+  "welcome": "Welcome",
+  "about": "About Us",
+  "hero": {
+    "experience": "Experience Excellence",
+    "title": "Discover the best of Chile",
+    "description": "Majestic Andes, unique wineries and the Atacama Desert. A journey designed for those who demand the extraordinary.",
+    "cta": "Book your private tour",
+    "availability": "Limited Availability • 24/7 Service"
+  },
+  "nav": {
+    "destinations": "Destinations",
+    "experience": "Experience",
+    "fleet": "Our Fleet",
+    "book": "Book VIP"
+  },
+  "services": {
+    "title": "Exclusivity in every kilometer.",
+    "subtitle": "Our philosophy is based on three pillars: discretion, absolute comfort and cutting-edge technology.",
+    "items": [
+      {
+        "title": "Royal Suite",
+        "detail": "Zero gravity seats, shiatsu massage and total privacy."
+      },
+      {
+        "title": "Sante Cava",
+        "detail": "Our exclusive selection of wines and signature cuisine on board."
+      },
+      {
+        "title": "Concierge VIP",
+        "detail": "Personalized assistance for any request during your journey."
+      }
+    ]
+  },
+  "trust": {
+    "satisfaction": "Guaranteed Satisfaction",
+    "certification": "International Certification",
+    "trips": "Exclusive Trips"
+  },
+  "footer": {
+    "quote": "\"Redefining luxury in motion since 2010. For those who know that the journey is as important as the destination.\"",
+    "nav_header": "Navigation",
+    "contact_header": "Private Contact",
+    "address": "Madero 450, Buenos Aires",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "copyright": "© {{year}} Transportes El Sol Excelsior. Boutique Hosting."
+  }
+}

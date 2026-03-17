@@ -1,0 +1,49 @@
+{
+  "welcome": "Bienvenido",
+  "about": "Sobre nosotros",
+  "hero": {
+    "experience": "Experimenta la Excelencia",
+    "title": "Descubre lo mejor de Chile",
+    "description": "Andes majestuosos, bodegas únicas y el desierto de Atacama. Un viaje diseñado para quienes exigen lo extraordinario.",
+    "cta": "Reserva tu tour privado",
+    "availability": "Disponibilidad Limitada • Servicio 24/7"
+  },
+  "nav": {
+    "destinations": "Destinos",
+    "experience": "Experiencia",
+    "fleet": "Nuestra Flota",
+    "book": "Reservar VIP"
+  },
+  "services": {
+    "title": "Exclusividad en cada kilómetro.",
+    "subtitle": "Nuestra filosofía se basa en tres pilares: discreción, confort absoluto y tecnología de vanguardia.",
+    "items": [
+      {
+        "title": "Royal Suite",
+        "detail": "Asientos de gravedad cero, masaje shiatsu y privacidad total."
+      },
+      {
+        "title": "Sante Cava",
+        "detail": "Nuestra exclusiva selección de vinos y gastronomía de autor a bordo."
+      },
+      {
+        "title": "Concierge VIP",
+        "detail": "Asistencia personalizada para cualquier solicitud durante su trayecto."
+      }
+    ]
+  },
+  "trust": {
+    "satisfaction": "Satisfacción Garantizada",
+    "certification": "Certificación Internacional",
+    "trips": "Viajes Exclusivos"
+  },
+  "footer": {
+    "quote": "\"Redefiniendo el lujo en movimiento desde 2010. Para quienes saben que el viaje es tan importante como el destino.\"",
+    "nav_header": "Navegación",
+    "contact_header": "Contacto Privado",
+    "address": "Madero 450, Buenos Aires",
+    "legal": "Legal",
+    "privacy": "Privacidad",
+    "copyright": "© {{year}} Transportes El Sol Excelsior. Boutique Hosting."
+  }
+}
