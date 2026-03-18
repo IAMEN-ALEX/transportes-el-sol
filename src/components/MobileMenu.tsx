@@ -9,11 +9,7 @@ export default function MobileMenu() {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
-  const languages = [
-    { code: 'es', label: 'ESP' },
-    { code: 'en', label: 'ENG' },
-    { code: 'pt', label: 'POR' },
-  ];
+
 
   const links = [
     { name: t('nav.destinations'), href: '#', icon: MapPin },
@@ -108,24 +104,7 @@ export default function MobileMenu() {
           </div>
         </div>
 
-        {/* Languages Selection Footer */}
-        <div className="relative p-10 border-t border-[#d4af37]/10 bg-black/40 flex justify-center items-center gap-12">
-          {languages.map((lang) => (
-            <button
-              key={lang.code}
-              onClick={() => {
-                i18n.changeLanguage(lang.code);
-                setIsOpen(false);
-              }}
-              className={cn(
-                "text-[10px] font-black tracking-[0.3em] transition-colors",
-                t('i18n.language') === lang.code ? "text-[#d4af37]" : "text-slate-500 hover:text-[#d4af37]"
-              )}
-            >
-              {lang.label}
-            </button>
-          ))}
-        </div>
+
       </div>
     </>
   );
