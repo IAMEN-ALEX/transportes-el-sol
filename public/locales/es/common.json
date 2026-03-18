@@ -12,7 +12,7 @@
     "destinations": "Destinos",
     "experience": "Experiencia",
     "fleet": "Nuestra Flota",
-    "book": "Reservar VIP"
+    "book": "Reservar"
   },
   "services": {
     "title": "Cada trayecto, una Experiencia.",
@@ -38,7 +38,7 @@
     "trips": "Experiencias Únicas"
   },
   "footer": {
-    "quote": "\"Desde el 2010, transformando cada viaje en una experiencia única. El camino es parte de la aventura .\"",
+    "quote": "\"Desde el 2002, transformando cada viaje en una experiencia única. El camino es parte de la aventura .\"",
     "nav_header": "Navegación",
     "contact_header": "Contacto Privado",
     "address": "Transportes El Sol",

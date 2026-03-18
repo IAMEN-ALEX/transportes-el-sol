@@ -15,7 +15,6 @@ export default function MobileMenu() {
     { name: t('nav.destinations'), href: '#', icon: MapPin },
     { name: t('nav.experience'), href: '#', icon: Sparkles },
     { name: t('nav.fleet'), href: '#', icon: Car },
-    { name: t('nav.book'), href: '#', icon: Calendar },
   ];
 
   return (

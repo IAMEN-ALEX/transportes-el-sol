@@ -58,9 +58,6 @@ export default function Home() {
             <a href="#" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.destinations')}</a>
             <a href="#" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.experience')}</a>
             <a href="#" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.fleet')}</a>
-            <button className="btn-star-led px-8 py-2.5 rounded-full text-[#d4af37] tracking-[0.25em] font-bold" suppressHydrationWarning>
-              {t('nav.book')}
-            </button>
           </div>
           <div className="flex items-center gap-4">
             <MobileMenu />
