@@ -68,7 +68,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-24">
             <div className="max-w-xl">
-              <h2 className="font-serif text-3xl md:text-5xl italic font-light mb-6 whitespace-nowrap">
+              <h2 className="font-serif text-[6.5vw] sm:text-4xl md:text-5xl italic font-light mb-6 whitespace-nowrap select-none">
                 {t('services.title').split(' ').filter((_, i, arr) => i < arr.length - 1).join(' ')}
                 <span className="text-[#d4af37]"> {t('services.title').split(' ').pop()}</span>
               </h2>
