@@ -31,7 +31,7 @@ export default function LanguageSwitcher() {
   if (!mounted) return <div className="h-10 w-10 sm:w-32 bg-slate-800 rounded-full animate-pulse border border-[#d4af37]/20"></div>;
 
   return (
-    <div className="relative z-[70]">
+    <div className="relative z-[70] hidden sm:block">
       {/* Mobile Version: Planet Icon with Dropdown */}
       <div className="sm:hidden relative">
         <button
