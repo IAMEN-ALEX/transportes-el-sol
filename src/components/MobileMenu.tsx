@@ -35,8 +35,8 @@ export default function MobileMenu() {
       {/* Overlay */}
       <div
         className={cn(
-          "fixed inset-0 z-[100] bg-[#020617]/98 backdrop-blur-3xl transition-all duration-700 flex flex-col origin-center overflow-hidden",
-          isOpen ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none"
+          "fixed top-0 left-0 right-0 z-[100] h-auto max-h-[75vh] bg-[#020617]/98 backdrop-blur-3xl transition-all duration-700 flex flex-col origin-top overflow-hidden rounded-b-[3rem] border-b border-[#d4af37]/30 shadow-[0_30px_100px_rgba(0,0,0,0.9)]",
+          isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
         )}
       >
         {/* Subtle background element */}
@@ -45,7 +45,7 @@ export default function MobileMenu() {
         </div>
 
         {/* Header */}
-        <div className="relative flex justify-between items-center px-8 h-24 border-b border-[#d4af37]/10">
+        <div className="relative flex justify-between items-center px-8 h-20 border-b border-[#d4af37]/10">
           <div className="flex items-center gap-4">
             <div className="w-10 h-10 rounded-full border border-[#d4af37]/30 flex items-center justify-center bg-[#d4af37]/10">
               <Sun className="w-5 h-5 text-[#d4af37]" />
