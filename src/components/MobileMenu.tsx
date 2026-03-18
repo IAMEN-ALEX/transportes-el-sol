@@ -13,6 +13,7 @@ export default function MobileMenu() {
     { name: t('nav.destinations'), href: '#' },
     { name: t('nav.experience'), href: '#' },
     { name: t('nav.fleet'), href: '#' },
+    { name: t('nav.book'), href: '#' },
   ];
 
   return (
@@ -57,13 +58,6 @@ export default function MobileMenu() {
               <ChevronRight className="w-6 h-6 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
             </a>
           ))}
-          
-          <button 
-            onClick={() => setIsOpen(false)}
-            className="w-full py-5 bg-gradient-gold text-[#020617] font-bold uppercase tracking-[0.3em] text-sm shadow-xl hover-glow-gold transition-all"
-          >
-            {t('nav.book')}
-          </button>
         </nav>
 
         <div className="p-12 border-t border-[#d4af37]/10 text-center">
