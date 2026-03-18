@@ -35,7 +35,7 @@ export default function MobileMenu() {
       {/* Overlay */}
       <div
         className={cn(
-          "fixed inset-0 z-[100] bg-[#020617]/98 backdrop-blur-3xl transition-all duration-700 flex flex-col origin-top",
+          "fixed top-0 left-0 right-0 z-[100] h-auto max-h-[85vh] bg-[#020617]/98 backdrop-blur-3xl transition-all duration-700 flex flex-col origin-top rounded-b-[2rem] border-b border-[#d4af37]/20 shadow-[0_30px_60px_rgba(0,0,0,0.8)]",
           isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
         )}
       >
