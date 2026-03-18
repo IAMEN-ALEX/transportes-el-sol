@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import I18nProvider from "@/components/I18nProvider";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const inter = Inter({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700", "800"] });
 
@@ -23,9 +22,6 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <I18nProvider>
-          <div className="fixed top-24 right-6 z-[60]">
-            <LanguageSwitcher />
-          </div>
           {children}
         </I18nProvider>
       </body>

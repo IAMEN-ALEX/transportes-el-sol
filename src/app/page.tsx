@@ -4,6 +4,7 @@ import React from 'react';
 import HeroVideo from "../components/HeroVideo";
 import { useTranslation } from 'react-i18next';
 import { Sun, ChevronRight } from 'lucide-react';
+import LanguageSwitcher from '../components/LanguageSwitcher';
 import { Playfair_Display } from 'next/font/google';
 
 const playfair = Playfair_Display({
@@ -35,7 +36,11 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed w-full z-50 top-0 bg-[#020617]/80 backdrop-blur-md border-b border-[#d4af37]/10">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-3 group cursor-pointer">
+          <div className="flex items-center gap-6">
+            <div className="hidden sm:block">
+              <LanguageSwitcher />
+            </div>
+            <div className="flex items-center gap-3 group cursor-pointer">
             <div className="w-10 h-10 rounded-full border border-[#d4af37]/30 flex items-center justify-center bg-[#d4af37]/5 group-hover:border-[#d4af37] transition-all duration-500 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
               <Sun className="w-5 h-5 text-[#d4af37] group-hover:rotate-90 transition-transform duration-700" />
             </div>
@@ -47,8 +52,9 @@ export default function Home() {
                 EL SOL
               </span>
             </div>
+            </div>
           </div>
-
+          
           <div className="hidden md:flex items-center gap-12 text-[11px] font-bold uppercase tracking-[0.3em] text-slate-400">
             <a href="#" className="hover:text-[#d4af37] transition-all">{t('nav.destinations')}</a>
             <a href="#" className="hover:text-[#d4af37] transition-all">{t('nav.experience')}</a>
