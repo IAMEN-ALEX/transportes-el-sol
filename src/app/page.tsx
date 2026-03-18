@@ -68,9 +68,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-24">
             <div className="max-w-xl">
-              <h2 className="font-serif text-4xl md:text-5xl italic font-light mb-6">
-                {t('services.title').split('kilómetro.')[0]}
-                <span className="text-[#d4af37]">{t('services.title').includes('kilómetro.') ? 'kilómetro.' : t('services.title').split(' ').pop()}</span>
+              <h2 className="font-serif text-3xl md:text-5xl italic font-light mb-6 whitespace-nowrap">
+                {t('services.title').split(' ').filter((_, i, arr) => i < arr.length - 1).join(' ')}
+                <span className="text-[#d4af37]"> {t('services.title').split(' ').pop()}</span>
               </h2>
               <div className="w-24 h-1 bg-[#d4af37] mb-8 opacity-40"></div>
             </div>
