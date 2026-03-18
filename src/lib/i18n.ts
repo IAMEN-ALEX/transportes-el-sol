@@ -22,7 +22,7 @@ i18n
       escapeValue: false,
     },
     detection: {
-      order: ['cookie', 'htmlTag', 'localStorage', 'path', 'subdomain'],
+      order: ['cookie', 'htmlTag'],
       caches: ['cookie'],
     },
   });

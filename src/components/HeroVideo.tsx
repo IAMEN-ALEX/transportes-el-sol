@@ -9,16 +9,16 @@ const HeroVideo: React.FC = () => {
   return (
     <section className="pt-28 pb-12 px-6 max-w-7xl mx-auto relative z-10 transition-all duration-700">
       {/* Contenido Superior */}
-      <div className="text-center mb-10 animate-fade-in">
-        <span className="inline-block text-[#d4af37] font-bold uppercase tracking-[0.5em] text-[10px] mb-4">
+      <div className="text-center mb-10 animate-fade-in" suppressHydrationWarning>
+        <span className="inline-block text-[#d4af37] font-bold uppercase tracking-[0.5em] text-[10px] mb-4" suppressHydrationWarning>
           {t('hero.experience')}
         </span>
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl leading-tight mb-6 font-light text-white">
+        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl leading-tight mb-6 font-light text-white" suppressHydrationWarning>
           {t('hero.title').split('Chile')[0]}
           <span className="gradient-text-gold font-bold">Chile</span>
           {t('hero.title').split('Chile')[1]}
         </h1>
-        <p className="text-slate-300 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto mb-2">
+        <p className="text-slate-300 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto mb-2" suppressHydrationWarning>
           {t('hero.description')}
         </p>
       </div>

@@ -71,27 +71,27 @@ export default function Home() {
       <section className="py-32 px-6 bg-[#020617] relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-24">
-            <div className="max-w-xl">
-              <h2 className="font-serif text-[6.5vw] sm:text-4xl md:text-5xl italic font-light mb-6 whitespace-nowrap select-none">
+            <div className="max-w-xl" suppressHydrationWarning>
+              <h2 className="font-serif text-[6.5vw] sm:text-4xl md:text-5xl italic font-light mb-6 whitespace-nowrap select-none" suppressHydrationWarning>
                 {t('services.title').split(' ').filter((_, i, arr) => i < arr.length - 1).join(' ')}
-                <span className="text-[#d4af37]"> {t('services.title').split(' ').pop()}</span>
+                <span className="text-[#d4af37]" suppressHydrationWarning> {t('services.title').split(' ').pop()}</span>
               </h2>
               <div className="w-24 h-1 bg-[#d4af37] mb-8 opacity-40"></div>
             </div>
-            <p className="text-slate-500 max-w-sm text-sm leading-relaxed font-light">
+            <p className="text-slate-500 max-w-sm text-sm leading-relaxed font-light" suppressHydrationWarning>
               {t('services.subtitle')}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6" suppressHydrationWarning>
             {(t('services.items', { returnObjects: true }) as { title: string; detail: string }[]).map((service, i) => (
-              <div key={i} className="glass-star-led p-12 group transition-all duration-700 rounded-2xl border border-[#d4af37]/10 hover:border-[#d4af37]/40">
+              <div key={i} className="glass-star-led p-12 group transition-all duration-700 rounded-2xl border border-[#d4af37]/10 hover:border-[#d4af37]/40" suppressHydrationWarning>
                 <span className="text-[#d4af37] text-[10px] tracking-[0.2em] font-serif italic mb-8 block opacity-60">0{i + 1} / EXPERIENCE</span>
-                <h3 className="font-serif text-2xl mb-6 group-hover:text-[#d4af37] transition-colors flex items-center justify-between">
+                <h3 className="font-serif text-2xl mb-6 group-hover:text-[#d4af37] transition-colors flex items-center justify-between" suppressHydrationWarning>
                   {service.title}
                   <ChevronRight className="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-[#d4af37]" />
                 </h3>
-                <p className="text-slate-400 text-sm font-light leading-relaxed mb-10">{service.detail}</p>
+                <p className="text-slate-400 text-sm font-light leading-relaxed mb-10" suppressHydrationWarning>{service.detail}</p>
                 <div className="h-0.5 w-0 bg-[#d4af37]/40 group-hover:w-full transition-all duration-700"></div>
               </div>
             ))}
@@ -136,7 +136,7 @@ export default function Home() {
                 </span>
               </div>
             </div>
-            <p className="text-slate-600 max-w-xs text-sm font-light leading-relaxed italic">
+            <p className="text-slate-600 max-w-xs text-sm font-light leading-relaxed italic" suppressHydrationWarning>
               {t('footer.quote')}
             </p>
           </div>
