@@ -36,8 +36,8 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed w-full z-50 top-0 bg-[#020617]/80 backdrop-blur-md border-b border-[#d4af37]/10">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-6">
-            <div className="hidden sm:block">
+          <div className="flex items-center gap-2 sm:gap-6">
+            <div className="scale-90 sm:scale-100 origin-left">
               <LanguageSwitcher />
             </div>
             <div className="flex items-center gap-3 group cursor-pointer">
