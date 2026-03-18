@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import I18nProvider from "@/components/I18nProvider";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const inter = Inter({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700", "800"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       >
         <I18nProvider>
           {children}
+          <WhatsAppFloat />
         </I18nProvider>
       </body>
     </html>
