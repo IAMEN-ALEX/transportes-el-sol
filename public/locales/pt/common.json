@@ -1,12 +1,12 @@
 {
   "welcome": "Bem-vindo",
-  "about": "Sobre nós",
+  "about": "Quem Somos",
   "hero": {
-    "experience": "Experimente a Excelência",
-    "title": "Descubra o melhor do Chile",
-    "description": "Andes majestosos, vinícolas exclusivas e o Deserto de Atacama. Uma viagem pensada para quem exige o extraordinário.",
-    "cta": "Reserve seu tour privado",
-    "availability": "Disponibilidade Limitada • Serviço 24/7"
+    "experience": "Viva a Experiência",
+    "title": "Explore o melhor do Chile",
+    "description": "O Chile em sua máxima expressão: montanhas, vinhedos e o deserto do Atacama. Uma experiência exclusiva.",
+    "cta": "Reserve sua viagem",
+    "availability": "Vagas Limitadas • Serviço 24/7"
   },
   "nav": {
     "destinations": "Destinos",
@@ -15,33 +15,35 @@
     "book": "Reservar VIP"
   },
   "services": {
-    "title": "Exclusividade em cada quilômetro.",
-    "subtitle": "Nossa filosofia se baseia em três pilares: discrição, conforto absoluto e tecnologia de ponta.",
+    "title": "Cada trajeto, uma Experiência.",
+    "subtitle": "Nossa filosofia se baseia em três pilares: discrição, conforto absoluto e tecnologia.",
     "items": [
       {
         "title": "Royal Suite",
-        "detail": "Assentos de gravidade zero, massagem shiatsu e privacidade total."
+        "detail": "Assentos confortáveis, massagem relaxante e espaço privado."
       },
       {
         "title": "Sante Cava",
-        "detail": "Nossa exclusiva seleção de vinhos e gastronomia de autor a bordo."
+        "detail": "Atendimento personalizado durante todo o seu trajeto."
       },
       {
         "title": "Concierge VIP",
-        "detail": "Assistência personalizada para qualquer solicitação durante o seu trajeto."
+        "detail": "Atendimento personalizado durante todo o seu trajeto."
       }
     ]
   },
   "trust": {
     "satisfaction": "Satisfação Garantida",
     "certification": "Certificação Internacional",
-    "trips": "Viagens Exclusivas"
+    "trips": "Experiências Únicas"
   },
   "footer": {
-    "quote": "\"Redefinindo o luxo em movimento desde 2010. Para quem sabe que a viagem é tão importante quanto o destino.\"",
+    "quote": "\"Desde 2010, transformando cada viagem em uma experiência única. O caminho é parte da aventura.\"",
     "nav_header": "Navegação",
     "contact_header": "Contato Privado",
-    "address": "Madero 450, Buenos Aires",
+    "address": "Transportes El Sol",
+    "email": "transporteselsol765@gmail.com",
+    "whatsapp": "+56984554590",
     "legal": "Legal",
     "privacy": "Privacidade",
     "copyright": "© {{year}} Transportes El Sol Excelsior. Boutique Hosting."

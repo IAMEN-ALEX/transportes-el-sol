@@ -13,7 +13,7 @@
   --color-glass-light: rgba(255, 255, 255, 0.05);
 
   --font-sans: "Inter", var(--font-geist-sans), sans-serif;
-  --font-serif: "Playfair Display", Georgia, serif; /* Elegant serif for luxury */
+  --font-serif: var(--font-playfair), "Playfair Display", Georgia, serif; /* Elegant serif for luxury */
 
   --animate-fade-in-up: fade-in-up 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   --animate-fade-in: fade-in 1.2s ease-out forwards;

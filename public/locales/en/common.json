@@ -2,11 +2,11 @@
   "welcome": "Welcome",
   "about": "About Us",
   "hero": {
-    "experience": "Experience Excellence",
-    "title": "Discover the best of Chile",
-    "description": "Majestic Andes, unique wineries and the Atacama Desert. A journey designed for those who demand the extraordinary.",
-    "cta": "Book your private tour",
-    "availability": "Limited Availability • 24/7 Service"
+    "experience": "Live the Experience",
+    "title": "Explore the Best of Chile",
+    "description": "Chile at its finest: mountains, vineyards, and the Atacama Desert. An exclusive experience.",
+    "cta": "Book Your Trip",
+    "availability": "Limited Spots • Service 24/7"
   },
   "nav": {
     "destinations": "Destinations",
@@ -15,33 +15,35 @@
     "book": "Book VIP"
   },
   "services": {
-    "title": "Exclusivity in every kilometer.",
-    "subtitle": "Our philosophy is based on three pillars: discretion, absolute comfort and cutting-edge technology.",
+    "title": "Each journey, an Experience.",
+    "subtitle": "Our philosophy is based on three pillars: discretion, absolute comfort, and technology.",
     "items": [
       {
         "title": "Royal Suite",
-        "detail": "Zero gravity seats, shiatsu massage and total privacy."
+        "detail": "Comfortable seats, relaxing massage, and private space."
       },
       {
         "title": "Sante Cava",
-        "detail": "Our exclusive selection of wines and signature cuisine on board."
+        "detail": "Unique flavors and selected drinks for your trip."
       },
       {
         "title": "Concierge VIP",
-        "detail": "Personalized assistance for any request during your journey."
+        "detail": "Personalized attention throughout your journey."
       }
     ]
   },
   "trust": {
     "satisfaction": "Guaranteed Satisfaction",
     "certification": "International Certification",
-    "trips": "Exclusive Trips"
+    "trips": "Unique Experiences"
   },
   "footer": {
-    "quote": "\"Redefining luxury in motion since 2010. For those who know that the journey is as important as the destination.\"",
+    "quote": "\"Since 2010, transforming every trip into a unique experience. The journey is part of the adventure.\"",
     "nav_header": "Navigation",
     "contact_header": "Private Contact",
-    "address": "Madero 450, Buenos Aires",
+    "address": "Transportes El Sol",
+    "email": "transporteselsol765@gmail.com",
+    "whatsapp": "+56984554590",
     "legal": "Legal",
     "privacy": "Privacy",
     "copyright": "© {{year}} Transportes El Sol Excelsior. Boutique Hosting."
