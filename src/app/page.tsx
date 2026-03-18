@@ -53,11 +53,11 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="hidden md:flex items-center gap-12 text-[11px] font-bold uppercase tracking-[0.3em] text-slate-400">
-            <a href="#" className="hover:text-[#d4af37] transition-all">{t('nav.destinations')}</a>
-            <a href="#" className="hover:text-[#d4af37] transition-all">{t('nav.experience')}</a>
-            <a href="#" className="hover:text-[#d4af37] transition-all">{t('nav.fleet')}</a>
-            <button className="btn-star-led px-8 py-2.5 rounded-full text-[#d4af37] tracking-[0.25em] font-bold">
+          <div className="hidden md:flex items-center gap-12 text-[11px] font-bold uppercase tracking-[0.3em] text-slate-400" suppressHydrationWarning>
+            <a href="#" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.destinations')}</a>
+            <a href="#" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.experience')}</a>
+            <a href="#" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.fleet')}</a>
+            <button className="btn-star-led px-8 py-2.5 rounded-full text-[#d4af37] tracking-[0.25em] font-bold" suppressHydrationWarning>
               {t('nav.book')}
             </button>
           </div>
