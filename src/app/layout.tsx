@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import I18nProvider from "@/components/I18nProvider";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import VIPBookingFloat from "@/components/VIPBookingFloat";
 
 const inter = Inter({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700", "800"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         <I18nProvider>
           {children}
           <WhatsAppFloat />
+          <VIPBookingFloat />
         </I18nProvider>
       </body>
     </html>

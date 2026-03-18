@@ -5,6 +5,7 @@ import HeroVideo from "../components/HeroVideo";
 import { useTranslation } from 'react-i18next';
 import { Sun, ChevronRight } from 'lucide-react';
 import LanguageSwitcher from '../components/LanguageSwitcher';
+import MobileMenu from '../components/MobileMenu';
 import { Playfair_Display } from 'next/font/google';
 
 const playfair = Playfair_Display({
@@ -60,6 +61,9 @@ export default function Home() {
             <button className="btn-star-led px-8 py-2.5 rounded-full text-[#d4af37] tracking-[0.25em] font-bold" suppressHydrationWarning>
               {t('nav.book')}
             </button>
+          </div>
+          <div className="flex items-center gap-4">
+            <MobileMenu />
           </div>
         </div>
       </nav>
