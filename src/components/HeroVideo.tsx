@@ -40,9 +40,14 @@ const HeroVideo: React.FC = () => {
 
       {/* Botón de Acción */}
       <div className="flex flex-col items-center gap-6">
-        <button className="px-12 py-5 bg-gradient-gold text-[#020617] font-bold uppercase tracking-[0.3em] text-xs hover-glow-gold transition-all shadow-lg hover:shadow-[#d4af37]/20">
+        <a 
+          href="https://wa.me/56984554590"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-12 py-5 bg-gradient-gold text-[#020617] font-bold uppercase tracking-[0.3em] text-xs hover-glow-gold transition-all shadow-lg hover:shadow-[#d4af37]/20 rounded-full inline-block text-center"
+        >
           {t('hero.cta')}
-        </button>
+        </a>
         <span className="text-[10px] text-slate-500 uppercase tracking-[0.2em] font-bold">
           {t('hero.availability')}
         </span>
