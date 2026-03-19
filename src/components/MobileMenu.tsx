@@ -35,7 +35,7 @@ export default function MobileMenu() {
         )}
       >
         {/* Subtle background element */}
-        <div className="absolute inset-0 opacity-[0.02] pointer-events-none" 
+        <div className="absolute inset-0 opacity-[0.02] pointer-events-none"
           style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, #d4af37 1px, transparent 0)', backgroundSize: '40px 40px' }}>
         </div>
 
@@ -91,11 +91,21 @@ export default function MobileMenu() {
           <div className="mt-auto max-w-sm mx-auto w-full space-y-4 text-center">
             <p className="text-[10px] text-slate-500 uppercase tracking-[0.4em] font-bold mb-4">Quick Reservations</p>
             <div className="grid grid-cols-2 gap-4">
-              <a href={`https://wa.me/${t('footer.whatsapp').replace(/\+/g, '')}`} className="flex flex-col items-center p-6 rounded-2xl bg-[#25D366]/5 border border-[#25D366]/10 text-slate-300 hover:bg-[#25D366]/10 transition-colors">
+              <a
+                href={`https://wa.me/${t('footer.whatsapp').replace(/\+/g, '')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center p-6 rounded-2xl bg-[#25D366]/5 border border-[#25D366]/10 text-slate-300 hover:bg-[#25D366]/10 transition-colors"
+              >
                 <span className="text-[9px] uppercase tracking-[0.2em] text-[#25D366] font-bold mb-2">WhatsApp</span>
                 <span className="text-xs font-light opacity-60">Instant Chat</span>
               </a>
-              <a href={`mailto:${t('footer.email')}`} className="flex flex-col items-center p-6 rounded-2xl bg-[#d4af37]/5 border border-[#d4af37]/10 text-slate-300 hover:bg-[#d4af37]/10 transition-colors">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=transporteselsol765@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center p-6 rounded-2xl bg-[#d4af37]/5 border border-[#d4af37]/10 text-slate-300 hover:bg-[#d4af37]/10 transition-colors"
+              >
                 <span className="text-[9px] uppercase tracking-[0.2em] text-[#d4af37] font-bold mb-2">Email</span>
                 <span className="text-xs font-light opacity-60">Direct Inquiry</span>
               </a>

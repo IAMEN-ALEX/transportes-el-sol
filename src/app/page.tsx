@@ -40,20 +40,20 @@ export default function Home() {
           <div className="flex items-center gap-4 sm:gap-6">
             <LanguageSwitcher />
             <div className="flex items-center gap-3 group cursor-pointer">
-            <div className="w-10 h-10 rounded-full border border-[#d4af37]/30 flex items-center justify-center bg-[#d4af37]/5 group-hover:border-[#d4af37] transition-all duration-500 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
-              <Sun className="w-5 h-5 text-[#d4af37] group-hover:rotate-90 transition-transform duration-700" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-serif text-lg tracking-[0.15em] font-light leading-none text-slate-200">
-                Transportes
-              </span>
-              <span className="font-serif text-xl tracking-[0.3em] font-bold gradient-text-gold mt-1">
-                EL SOL
-              </span>
-            </div>
+              <div className="w-10 h-10 rounded-full border border-[#d4af37]/30 flex items-center justify-center bg-[#d4af37]/5 group-hover:border-[#d4af37] transition-all duration-500 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
+                <Sun className="w-5 h-5 text-[#d4af37] group-hover:rotate-90 transition-transform duration-700" />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-serif text-lg tracking-[0.15em] font-light leading-none text-slate-200">
+                  Transportes
+                </span>
+                <span className="font-serif text-xl tracking-[0.3em] font-bold gradient-text-gold mt-1">
+                  EL SOL
+                </span>
+              </div>
             </div>
           </div>
-          
+
           <div className="hidden md:flex items-center gap-12 text-[11px] font-bold uppercase tracking-[0.3em] text-slate-400" suppressHydrationWarning>
             <a href="#" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.destinations')}</a>
             <a href="#" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.experience')}</a>
@@ -156,8 +156,13 @@ export default function Home() {
                 <span>{t('footer.address')}</span>
               </div>
               <div className="flex items-center gap-3">
-                <a href={`mailto:${t('footer.email')}`} className="hover:text-[#d4af37] transition-colors">
-                  {t('footer.email')}
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=transporteselsol765@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#d4af37] transition-colors"
+                >
+                  transporteselsol765@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
