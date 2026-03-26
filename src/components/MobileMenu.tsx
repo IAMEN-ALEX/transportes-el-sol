@@ -12,7 +12,7 @@ export default function MobileMenu() {
 
 
   const links = [
-    { name: t('nav.destinations'), href: '#', icon: MapPin },
+    { name: t('nav.destinations'), href: '/destinos', icon: MapPin },
     { name: t('nav.experience'), href: '#', icon: Sparkles },
     { name: t('nav.fleet'), href: '#', icon: Car },
   ];

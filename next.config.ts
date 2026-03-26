@@ -1,7 +1,16 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  reactStrictMode: true,
+  output: 'export',   // 👈 esta línea habilita el export estático
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'transporteselsol1.cl',
+      },
+    ],
+  },
+}
 
-export default nextConfig;
+export default nextConfig

@@ -55,7 +55,7 @@ export default function Home() {
           </div>
 
           <div className="hidden md:flex items-center gap-12 text-[11px] font-bold uppercase tracking-[0.3em] text-slate-400" suppressHydrationWarning>
-            <a href="#" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.destinations')}</a>
+            <a href="/destinos" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.destinations')}</a>
             <a href="#" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.experience')}</a>
             <a href="#" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.fleet')}</a>
           </div>
