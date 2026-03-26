@@ -28,44 +28,44 @@ export default function DestinosPage() {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const [isPromoVideoLoaded, setIsPromoVideoLoaded] = useState(false);
   const [destinations] = useState<Destination[]>([
-    { 
-      id: '1', 
-      name: 'Valle de Azapa', 
+    {
+      id: '1',
+      name: 'Valle de Azapa',
       description: 'Explora la cuna de los geoglifos y la cultura milenaria en un oasis fértil cerca de Arica.',
       image: '/ValleAzapa.jpg',
       price: 'Bus + Tour: $80.000 – $127.000'
     },
-    { 
-      id: '2', 
-      name: 'Valle de Lluta', 
+    {
+      id: '2',
+      name: 'Valle de Lluta',
       description: 'Portal de entrada al altiplano, famoso por sus geoglifos milenarios y su verde valle agrícola a las afueras de Arica.',
       image: '/ValleLluta.jpg',
       price: 'Bus + Tour: $85.000 – $112.000'
     },
-    { 
-      id: '3', 
-      name: 'Parinacota Santiago + tour altiplánico', 
+    {
+      id: '3',
+      name: 'Parinacota Santiago + tour altiplánico',
       description: 'Explora la majestuosidad del altiplano en el pueblo de Parinacota, rodeado de volcanes nevados y lagunas cristalinas.',
       image: '/Parinacota.jpg',
       price: 'Bus ida y vuelta ($70.000 CLP) + tour ($195.000 CLP) ≈ $265.000 CLP'
     },
-    { 
-      id: '4', 
-      name: 'Putre Parinacota Santiago + tour altiplánico', 
+    {
+      id: '4',
+      name: 'Putre Parinacota Santiago + tour altiplánico',
       description: 'Descubre la joya andina de Putre, un oasis de arquitectura colonial rodeado de imponentes volcanes y la pureza del altiplano.',
       image: '/Putre.jpg',
       price: 'Bus Santiago–Arica ida y vuelta (~$70.000 CLP) + tour Putre (~$195.000 CLP) ≈ $265.000 CLP por persona'
     },
-    { 
-      id: '5', 
-      name: 'Salar De Surire', 
+    {
+      id: '5',
+      name: 'Salar De Surire',
       description: 'Descubre la inmensidad blanca del Salar de Surire, un santuario de la naturaleza donde flamencos y vicuñas conviven en un paisaje de sal y aguas termales a gran altura.',
       image: '/SalarSurire.jpg',
       price: 'Bus Santiago–Arica ida y vuelta (~$70.000 CLP) + tour Surire (~$260.000 CLP) ≈ $330.000 CLP por persona'
     },
-    { 
-      id: '6', 
-      name: 'Morro de Arica', 
+    {
+      id: '6',
+      name: 'Morro de Arica',
       description: 'El centinela de la ciudad, un hito histórico con vistas panorámicas inigualables del océano Pacífico y la ciudad de la eterna primavera.',
       image: '/MorroArica.jpg',
       price: 'Bus + visita al Morro: $37.000 – $60.000 CLP por persona'
@@ -133,12 +133,11 @@ export default function DestinosPage() {
           {/* Video Section */}
           <div className="aspect-video w-full mb-16 relative group bg-[#020617] rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-[#d4af37]/20 hover:border-[#d4af37]/40 transition-all duration-700">
             {/* Placeholder Image (Fades out when loaded, pops in quickly at end) */}
-            <img 
-              src="/ImgenArica.png" 
-              alt="Arica Panorama" 
-              className={`absolute inset-0 w-full h-full object-cover transition-opacity ${
-                isVideoLoaded ? 'opacity-0 duration-[2000ms]' : 'opacity-100 duration-500'
-              }`}
+            <img
+              src="/ImgenArica.png"
+              alt="Arica Panorama"
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity ${isVideoLoaded ? 'opacity-0 duration-[2000ms]' : 'opacity-100 duration-500'
+                }`}
             />
             {/* Video Element (Fades in to 80%) */}
             <video
@@ -161,12 +160,20 @@ export default function DestinosPage() {
                 e.currentTarget.currentTime = 0;
                 e.currentTarget.play();
               }}
-              className={`w-full h-full object-cover transition-opacity duration-[2000ms] relative z-10 ${
-                isVideoLoaded ? 'opacity-80 group-hover:opacity-100' : 'opacity-0'
-              }`}
+              className={`w-full h-full object-cover transition-opacity duration-[2000ms] relative z-10 ${isVideoLoaded ? 'opacity-80 group-hover:opacity-100' : 'opacity-0'
+                }`}
             />
+
             {/* Overlay Gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent opacity-60 pointer-events-none z-20"></div>
+
+            {/* Hover Text Decoration (Identical to Promo) */}
+            <div className="absolute inset-0 flex items-center justify-center z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+              <div className="text-center">
+                <span className="font-serif text-3xl italic text-[#d4af37] drop-shadow-2xl">Transportes El Sol</span>
+                <div className="h-px w-24 bg-[#d4af37] mx-auto mt-4 shadow-[0_0_10px_#d4af37]"></div>
+              </div>
+            </div>
 
             {/* Visual Decoration */}
             <div className="absolute top-6 right-6 z-30">
@@ -194,10 +201,10 @@ export default function DestinosPage() {
                 <div key={dest.id} className="glass-star-led rounded-2xl border border-white/5 group hover:border-[#d4af37]/30 transition-all overflow-hidden flex flex-col">
                   {dest.image && (
                     <div className="aspect-video w-full overflow-hidden border-b border-white/5">
-                      <img 
-                        src={dest.image} 
-                        alt={dest.name || "Destino Turístico"} 
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                      <img
+                        src={dest.image}
+                        alt={dest.name || "Destino Turístico"}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                     </div>
                   )}
@@ -237,12 +244,10 @@ export default function DestinosPage() {
 
             <div className="aspect-video w-full relative group bg-[#020617] rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-[#d4af37]/20 hover:border-[#d4af37]/40 transition-all duration-700">
               {/* Placeholder image for promo - using Arica image as default since it's the main theme */}
-              <img 
-                src="/ImgenArica.png" 
-                alt="Promo Preview" 
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity ${
-                  isPromoVideoLoaded ? 'opacity-0 duration-[2000ms]' : 'opacity-100 duration-500'
-                }`}
+              <img
+                alt="Promo Preview"
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity ${isPromoVideoLoaded ? 'opacity-0 duration-[2000ms]' : 'opacity-100 duration-500'
+                  }`}
               />
               <video
                 src="/video_promo.mp4"
@@ -260,12 +265,11 @@ export default function DestinosPage() {
                     video.play();
                   }
                 }}
-                className={`w-full h-full object-cover transition-opacity duration-[2000ms] relative z-10 ${
-                  isPromoVideoLoaded ? 'opacity-80 group-hover:opacity-100' : 'opacity-0'
-                }`}
+                className={`w-full h-full object-cover transition-opacity duration-[2000ms] relative z-10 ${isPromoVideoLoaded ? 'opacity-80 group-hover:opacity-100' : 'opacity-0'
+                  }`}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent opacity-60 pointer-events-none z-20"></div>
-              
+
               <div className="absolute inset-0 flex items-center justify-center z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                 <div className="text-center">
                   <span className="font-serif text-3xl italic text-[#d4af37] drop-shadow-2xl">Transportes El Sol</span>
