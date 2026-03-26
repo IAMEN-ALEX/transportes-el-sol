@@ -7,6 +7,7 @@ import { Sun, ChevronRight } from 'lucide-react';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import MobileMenu from '../components/MobileMenu';
 import { Playfair_Display } from 'next/font/google';
+import Link from 'next/link';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -55,9 +56,9 @@ export default function Home() {
           </div>
 
           <div className="hidden md:flex items-center gap-12 text-[11px] font-bold uppercase tracking-[0.3em] text-slate-400" suppressHydrationWarning>
-            <a href="/destinos" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.destinations')}</a>
-            <a href="#" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.experience')}</a>
-            <a href="#" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.fleet')}</a>
+            <Link href="/destinos" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.destinations')}</Link>
+            <Link href="#" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.experience')}</Link>
+            <Link href="#" className="hover:text-[#d4af37] transition-all" suppressHydrationWarning>{t('nav.fleet')}</Link>
           </div>
           <div className="flex items-center gap-4">
             <MobileMenu />

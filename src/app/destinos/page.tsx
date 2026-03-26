@@ -6,6 +6,7 @@ import { Sun, MapPin, ChevronLeft } from 'lucide-react';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import MobileMenu from '@/components/MobileMenu';
 import { Playfair_Display } from 'next/font/google';
+import Link from 'next/link';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -88,7 +89,7 @@ export default function DestinosPage() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-4 sm:gap-6">
             <LanguageSwitcher />
-            <a href="/" className="flex items-center gap-3 group cursor-pointer">
+            <Link href="/" className="flex items-center gap-3 group cursor-pointer">
               <div className="w-10 h-10 rounded-full border border-[#d4af37]/30 flex items-center justify-center bg-[#d4af37]/5 group-hover:border-[#d4af37] transition-all duration-500 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
                 <Sun className="w-5 h-5 text-[#d4af37] group-hover:rotate-90 transition-transform duration-700" />
               </div>
@@ -100,13 +101,13 @@ export default function DestinosPage() {
                   EL SOL
                 </span>
               </div>
-            </a>
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center gap-12 text-[11px] font-bold uppercase tracking-[0.3em] text-slate-400">
-            <a href="/" className="hover:text-[#d4af37] transition-all flex items-center gap-2">
+            <Link href="/" className="hover:text-[#d4af37] transition-all flex items-center gap-2">
               <ChevronLeft className="w-3 h-3" /> VOLVER AL INICIO
-            </a>
+            </Link>
           </div>
           <div className="flex items-center gap-4">
             <MobileMenu />
@@ -134,7 +135,7 @@ export default function DestinosPage() {
             {/* Placeholder Image (Fades out when loaded, pops in quickly at end) */}
             <img 
               src="/ImgenArica.png" 
-              alt="Arica, Chile" 
+              alt="Arica Panorama" 
               className={`absolute inset-0 w-full h-full object-cover transition-opacity ${
                 isVideoLoaded ? 'opacity-0 duration-[2000ms]' : 'opacity-100 duration-500'
               }`}
@@ -195,7 +196,7 @@ export default function DestinosPage() {
                     <div className="aspect-video w-full overflow-hidden border-b border-white/5">
                       <img 
                         src={dest.image} 
-                        alt={dest.name} 
+                        alt={dest.name || "Destino Turístico"} 
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                       />
                     </div>

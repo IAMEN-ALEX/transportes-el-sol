@@ -6,7 +6,7 @@ import { Menu, X, ChevronRight, MapPin, Sparkles, Car, Calendar, Sun } from 'luc
 import { cn } from '@/lib/utils';
 
 export default function MobileMenu() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
 
