@@ -74,9 +74,9 @@ export default function DestinosPage() {
 
   const [promoDestinations] = useState<Destination[]>([
     { id: 'p1', name: 'Embalse el Yeso', description: 'Majestuoso embalse cordillerano de aguas color turquesa anidado en plena Cordillera de los Andes.', image: '/EmbalseYeso.jpg', price: 'Consultar valor' },
-    { id: 'p2', name: 'Baños Morales', description: 'Atractivo poblado famoso por sus rústicas piscinas de aguas termales ricas en minerales naturales.', image: '/BanosMorales.jpg', price: 'Consultar valor' },
-    { id: 'p3', name: 'Monumento El Morado', description: 'Inolvidable ruta de senderismo ecológico y acceso panorámico al imponente glaciar colgante.', image: '/MonumentoElMorado.jpg', price: 'Consultar valor' },
-    { id: 'p4', name: 'Cascada de las Ánimas', description: 'Santuario pre-andino enfocado en el descanso premium, rodeado de caudalosos cruces de ríos.', image: '/ImgenArica.png', price: 'Consultar valor' },
+    { id: 'p2', name: 'Termas de Colina', description: 'Atractivo poblado famoso por sus rústicas piscinas de aguas termales ricas en minerales naturales.', image: '/BanosMorales.jpg', price: 'Consultar valor' },
+    { id: 'p3', name: 'Termas el Plomo', description: 'Inolvidable ruta de senderismo ecológico y acceso panorámico al imponente glaciar colgante.', image: '/MonumentoElMorado.jpg', price: 'Consultar valor' },
+    { id: 'p4', name: 'Cascada de las Ánimas', description: 'Santuario pre-andino enfocado en el descanso premium, rodeado de caudalosos cruces de ríos.', image: '/CascadaAnimas.jpg', price: 'Consultar valor' },
     { id: 'p5', name: 'San José de Maipo', description: 'Centro histórico, pintoresco y cultural que funciona como la emblemática puerta de entrada al valle.', image: '/ImgenArica.png', price: 'Consultar valor' },
     { id: 'p6', name: 'Termas del Plomo', description: 'Pozas termales en un entorno andino virgen a gran altura, ideal para la relajación rústica absoluta.', image: '/ImgenArica.png', price: 'Consultar valor' },
     { id: 'p7', name: 'Valle de las Arenas', description: 'Escenario prehistórico rodeado por escarpadas formaciones rocosas y vientos de la alta montaña.', image: '/ImgenArica.png', price: 'Consultar valor' },
