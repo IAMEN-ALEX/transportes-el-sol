@@ -242,8 +242,8 @@ export default function DestinosPage() {
               <span className="h-px bg-slate-800 flex-1"></span>
             </h3>
             
-            <div className="text-center mt-6 mb-10">
-              <h2 className="font-serif text-3xl md:text-5xl italic text-[#d4af37] font-light">
+            <div className="text-center mt-4 mb-10">
+              <h2 className="font-serif text-2xl text-[#d4af37] italic font-light">
                 Cajón del Maipo
               </h2>
             </div>
