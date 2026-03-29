@@ -262,8 +262,8 @@ export default function DestinosPage() {
             <div className="aspect-video w-full relative group bg-[#020617] rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-[#d4af37]/20 hover:border-[#d4af37]/40 transition-all duration-700">
               {/* Placeholder image for promo */}
               <img
-                src="/images/EmbalseYeso.jpg"
-                alt="Promo Preview"
+                src="/images/PromoCajonPreview.png"
+                alt="Cajón del Maipo Preview"
                 className={`absolute inset-0 w-full h-full object-cover transition-opacity ${isPromoVideoLoaded ? 'opacity-0 duration-[2000ms]' : 'opacity-100 duration-500'
                   }`}
               />
