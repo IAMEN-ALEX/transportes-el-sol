@@ -145,7 +145,7 @@ export default function DestinosPage() {
           <div className="aspect-video w-full mb-16 relative group bg-[#020617] rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-[#d4af37]/20 hover:border-[#d4af37]/40 transition-all duration-700">
             {/* Placeholder Image (Fades out when loaded, pops in quickly at end) */}
             <img
-              src="/ImgenArica.png"
+              src="/images/ImgenArica.png"
               alt="Arica Panorama"
               className={`absolute inset-0 w-full h-full object-cover transition-opacity ${isVideoLoaded ? 'opacity-0 duration-[2000ms]' : 'opacity-100 duration-500'
                 }`}
