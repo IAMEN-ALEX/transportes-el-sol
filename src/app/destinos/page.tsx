@@ -243,14 +243,14 @@ export default function DestinosPage() {
             </h3>
 
             <div className="aspect-video w-full relative group bg-[#020617] rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-[#d4af37]/20 hover:border-[#d4af37]/40 transition-all duration-700">
-              {/* Placeholder image for promo - using Arica image as default since it's the main theme */}
+              {/* Placeholder image for promo */}
               <img
                 alt="Promo Preview"
                 className={`absolute inset-0 w-full h-full object-cover transition-opacity ${isPromoVideoLoaded ? 'opacity-0 duration-[2000ms]' : 'opacity-100 duration-500'
                   }`}
               />
               <video
-                src="/video_promo.mp4"
+                src="/Video-Promocajondelmaipo.mp4"
                 autoPlay
                 muted
                 loop
