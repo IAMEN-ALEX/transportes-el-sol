@@ -80,7 +80,7 @@ export default function DestinosPage() {
     { id: 'p5', name: 'Canopy', description: 'Aventura extrema volando sobre la copa de los árboles con vistas inigualables del ecosistema andino.', image: '/images/Canopy.jpg', price: 'Tour básico: $55.000 CLP (transporte + entrada + canopy)' },
     { id: 'p6', name: 'Rafting', description: 'Desciende por los emocionantes rápidos del río Maipo en una desafiante aventura de trabajo en equipo.', image: '/images/Rafting.jpg', price: 'Tour básico: $65.000 CLP (transporte + entrada + rafting)' },
     { id: 'p7', name: 'Cabalgatas', description: 'Explora los senderos cordilleranos a caballo, una experiencia única entre montañas nevadas y paisajes majestuosos.', image: '/images/Cabalgatas.jpg', price: 'Tour básico: $65.000 CLP (transporte + entrada + cabalgata)' },
-    { id: 'p8', name: 'San José de Maipo', description: 'Capital comunal y centro histórico, famoso por su arquitectura colonial, su plaza de armas y su aire puro de montaña.', image: '/images/SanJoseMaipo.jpg', price: 'Consultar valor' },
+    { id: 'p8', name: 'San José de Maipo', description: 'Capital comunal y centro histórico, famoso por su arquitectura colonial, su plaza de armas y su aire puro de montaña.', image: '/images/SanJoseMaipo.jpg', price: 'Tour estándar: $30.000 CLP (transporte + visita guiada + degustación)' },
   ]);
 
   return (
