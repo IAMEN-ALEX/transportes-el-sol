@@ -73,7 +73,7 @@ export default function DestinosPage() {
   ]);
 
   const [promoDestinations] = useState<Destination[]>([
-    { id: 'p1', name: 'Embalse el Yeso', description: 'Majestuoso embalse cordillerano de aguas color turquesa anidado en plena Cordillera de los Andes.', image: '/images/EmbalseYeso.jpg', price: 'Desde Santiago: $45.000 – $60.000' },
+    { id: 'p1', name: 'Embalse el Yeso', description: 'Majestuoso embalse cordillerano de aguas color turquesa anidado en plena Cordillera de los Andes.', image: '/images/EmbalseYeso.jpg', price: 'Embalse El Yeso: $45.000 – $60.000 | Transporte + guía + snack' },
     { id: 'p2', name: 'Termas de Colina', description: 'Atractivo poblado famoso por sus rústicas piscinas de aguas termales ricas en minerales naturales.', image: '/images/BanosMorales.jpg', price: 'Santiago – Termas de Colina: $45.000 – $60.000 | Transporte + entrada + guía' },
     { id: 'p3', name: 'Termas el Plomo', description: 'Inolvidable ruta de senderismo ecológico y acceso panorámico al imponente glaciar colgante.', image: '/images/MonumentoElMorado.jpg', price: 'Consultar valor' },
     { id: 'p4', name: 'Cascada de las Ánimas', description: 'Santuario pre-andino enfocado en el descanso premium, rodeado de caudalosos cruces de ríos.', image: '/images/CascadaAnimas.jpg', price: 'Consultar valor' },
