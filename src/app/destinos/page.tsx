@@ -79,7 +79,8 @@ export default function DestinosPage() {
     { id: 'p4', name: 'Cascada de las Ánimas', description: 'Santuario pre-andino enfocado en el descanso premium, rodeado de caudalosos cruces de ríos.', image: '/CascadaAnimas.jpg', price: 'Consultar valor' },
     { id: 'p5', name: 'Canopy', description: 'Aventura extrema volando sobre la copa de los árboles con vistas inigualables del ecosistema andino.', image: '/Canopy.jpg', price: 'Consultar valor' },
     { id: 'p6', name: 'Rafting', description: 'Desciende por los emocionantes rápidos del río Maipo en una desafiante aventura de trabajo en equipo.', image: '/Rafting.jpg', price: 'Consultar valor' },
-    { id: 'p7', name: 'Valle de las Arenas', description: 'Escenario prehistórico rodeado por escarpadas formaciones rocosas y vientos de la alta montaña.', image: '/ImgenArica.png', price: 'Consultar valor' },
+    { id: 'p7', name: 'Cabalgatas', description: 'Explora los senderos cordilleranos a caballo, una experiencia única entre montañas nevadas y paisajes majestuosos.', image: '/Cabalgatas.jpg', price: 'Consultar valor' },
+    { id: 'p8', name: 'San José de Maipo', description: 'Capital comunal y centro histórico, famoso por su arquitectura colonial, su plaza de armas y su aire puro de montaña.', image: '/SanJoseMaipo.jpg', price: 'Consultar valor' },
   ]);
 
   return (
@@ -206,7 +207,7 @@ export default function DestinosPage() {
               <span className="h-px bg-slate-800 flex-1"></span>
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {destinations.map((dest) => (
                 <div key={dest.id} className="glass-star-led rounded-2xl border border-white/5 group hover:border-[#d4af37]/30 transition-all overflow-hidden flex flex-col">
                   {dest.image && (
@@ -218,7 +219,7 @@ export default function DestinosPage() {
                       />
                     </div>
                   )}
-                  <div className="p-8">
+                    <div className="p-8 flex flex-col flex-1">
                     <div className="flex justify-between items-start mb-6">
                       <div className="w-10 h-10 rounded-full bg-[#d4af37]/10 flex items-center justify-center">
                         <MapPin className="w-5 h-5 text-[#d4af37]" />
