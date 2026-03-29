@@ -78,7 +78,7 @@ export default function DestinosPage() {
     { id: 'p3', name: 'Termas el Plomo', description: 'Inolvidable ruta de senderismo ecológico y acceso panorámico al imponente glaciar colgante.', image: '/MonumentoElMorado.jpg', price: 'Consultar valor' },
     { id: 'p4', name: 'Cascada de las Ánimas', description: 'Santuario pre-andino enfocado en el descanso premium, rodeado de caudalosos cruces de ríos.', image: '/CascadaAnimas.jpg', price: 'Consultar valor' },
     { id: 'p5', name: 'Canopy', description: 'Aventura extrema volando sobre la copa de los árboles con vistas inigualables del ecosistema andino.', image: '/Canopy.jpg', price: 'Consultar valor' },
-    { id: 'p6', name: 'Termas del Plomo', description: 'Pozas termales en un entorno andino virgen a gran altura, ideal para la relajación rústica absoluta.', image: '/ImgenArica.png', price: 'Consultar valor' },
+    { id: 'p6', name: 'Rafting', description: 'Desciende por los emocionantes rápidos del río Maipo en una desafiante aventura de trabajo en equipo.', image: '/Rafting.jpg', price: 'Consultar valor' },
     { id: 'p7', name: 'Valle de las Arenas', description: 'Escenario prehistórico rodeado por escarpadas formaciones rocosas y vientos de la alta montaña.', image: '/ImgenArica.png', price: 'Consultar valor' },
   ]);
 
