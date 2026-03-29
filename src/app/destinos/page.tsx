@@ -72,6 +72,16 @@ export default function DestinosPage() {
     },
   ]);
 
+  const [promoDestinations] = useState<Destination[]>([
+    { id: 'p1', name: 'Embalse el Yeso', description: 'Majestuoso embalse cordillerano de aguas color turquesa anidado en plena Cordillera de los Andes.', image: '/ImgenArica.png', price: 'Consultar valor' },
+    { id: 'p2', name: 'Baños Morales', description: 'Atractivo poblado famoso por sus rústicas piscinas de aguas termales ricas en minerales naturales.', image: '/ImgenArica.png', price: 'Consultar valor' },
+    { id: 'p3', name: 'Monumento El Morado', description: 'Inolvidable ruta de senderismo ecológico y acceso panorámico al imponente glaciar colgante.', image: '/ImgenArica.png', price: 'Consultar valor' },
+    { id: 'p4', name: 'Cascada de las Ánimas', description: 'Santuario pre-andino enfocado en el descanso premium, rodeado de caudalosos cruces de ríos.', image: '/ImgenArica.png', price: 'Consultar valor' },
+    { id: 'p5', name: 'San José de Maipo', description: 'Centro histórico, pintoresco y cultural que funciona como la emblemática puerta de entrada al valle.', image: '/ImgenArica.png', price: 'Consultar valor' },
+    { id: 'p6', name: 'Termas del Plomo', description: 'Pozas termales en un entorno andino virgen a gran altura, ideal para la relajación rústica absoluta.', image: '/ImgenArica.png', price: 'Consultar valor' },
+    { id: 'p7', name: 'Valle de las Arenas', description: 'Escenario prehistórico rodeado por escarpadas formaciones rocosas y vientos de la alta montaña.', image: '/ImgenArica.png', price: 'Consultar valor' },
+  ]);
+
   return (
     <main className={`${playfair.variable} min-h-screen bg-[#020617] text-slate-50 font-sans selection:bg-[#d4af37] selection:text-[#020617]`}>
 
@@ -281,6 +291,46 @@ export default function DestinosPage() {
                   <span className="font-serif text-3xl italic text-[#d4af37] drop-shadow-2xl">Transportes El Sol</span>
                   <div className="h-px w-24 bg-[#d4af37] mx-auto mt-4 shadow-[0_0_10px_#d4af37]"></div>
                 </div>
+              </div>
+            </div>
+
+            {/* Promo Destinations Catalog */}
+            <div className="space-y-6 mt-16">
+              <h3 className="text-[10px] uppercase tracking-[0.4em] text-slate-500 font-bold mb-8 flex items-center gap-4">
+                <span className="h-px bg-slate-800 flex-1"></span>
+                RUTAS CAJÓN DEL MAIPO
+                <span className="h-px bg-slate-800 flex-1"></span>
+              </h3>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {promoDestinations.map((dest) => (
+                  <div key={dest.id} className="glass-star-led rounded-2xl border border-white/5 group hover:border-[#d4af37]/30 transition-all overflow-hidden flex flex-col">
+                    {dest.image && (
+                      <div className="aspect-video w-full overflow-hidden border-b border-white/5">
+                        <img
+                          src={dest.image}
+                          alt={dest.name || "Destino Turístico"}
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        />
+                      </div>
+                    )}
+                    <div className="p-8 flex flex-col flex-1">
+                      <div className="flex justify-between items-start mb-6">
+                        <div className="w-10 h-10 rounded-full bg-[#d4af37]/10 flex items-center justify-center">
+                          <MapPin className="w-5 h-5 text-[#d4af37]" />
+                        </div>
+                      </div>
+                      <h4 className="font-serif text-xl text-slate-200 mb-3 group-hover:text-[#d4af37] transition-colors">{dest.name}</h4>
+                      <p className="text-sm text-slate-500 font-light leading-relaxed mb-6">{dest.description}</p>
+                      {dest.price && (
+                        <div className="mt-auto pt-6 border-t border-white/5">
+                          <span className="text-[10px] text-[#d4af37] font-bold tracking-[0.2em] uppercase block mb-1">Valor Estimado</span>
+                          <span className="text-slate-300 font-serif italic text-lg">{dest.price}</span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
