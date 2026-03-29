@@ -32,55 +32,55 @@ export default function DestinosPage() {
       id: '1',
       name: 'Valle de Azapa',
       description: 'Explora la cuna de los geoglifos y la cultura milenaria en un oasis fértil cerca de Arica.',
-      image: '/ValleAzapa.jpg',
+      image: '/images/ValleAzapa.jpg',
       price: 'Bus + Tour: $80.000 – $127.000'
     },
     {
       id: '2',
       name: 'Valle de Lluta',
       description: 'Portal de entrada al altiplano, famoso por sus geoglifos milenarios y su verde valle agrícola a las afueras de Arica.',
-      image: '/ValleLluta.jpg',
+      image: '/images/ValleLluta.jpg',
       price: 'Bus + Tour: $85.000 – $112.000'
     },
     {
       id: '3',
       name: 'Parinacota Santiago + tour altiplánico',
       description: 'Explora la majestuosidad del altiplano en el pueblo de Parinacota, rodeado de volcanes nevados y lagunas cristalinas.',
-      image: '/Parinacota.jpg',
+      image: '/images/Parinacota.jpg',
       price: 'Bus ida y vuelta ($70.000 CLP) + tour ($195.000 CLP) ≈ $265.000 CLP'
     },
     {
       id: '4',
       name: 'Putre Parinacota Santiago + tour altiplánico',
       description: 'Descubre la joya andina de Putre, un oasis de arquitectura colonial rodeado de imponentes volcanes y la pureza del altiplano.',
-      image: '/Putre.jpg',
+      image: '/images/Putre.jpg',
       price: 'Bus Santiago–Arica ida y vuelta (~$70.000 CLP) + tour Putre (~$195.000 CLP) ≈ $265.000 CLP por persona'
     },
     {
       id: '5',
       name: 'Salar De Surire',
       description: 'Descubre la inmensidad blanca del Salar de Surire, un santuario de la naturaleza donde flamencos y vicuñas conviven en un paisaje de sal y aguas termales a gran altura.',
-      image: '/SalarSurire.jpg',
+      image: '/images/SalarSurire.jpg',
       price: 'Bus Santiago–Arica ida y vuelta (~$70.000 CLP) + tour Surire (~$260.000 CLP) ≈ $330.000 CLP por persona'
     },
     {
       id: '6',
       name: 'Morro de Arica',
       description: 'El centinela de la ciudad, un hito histórico con vistas panorámicas inigualables del océano Pacífico y la ciudad de la eterna primavera.',
-      image: '/MorroArica.jpg',
+      image: '/images/MorroArica.jpg',
       price: 'Bus + visita al Morro: $37.000 – $60.000 CLP por persona'
     },
   ]);
 
   const [promoDestinations] = useState<Destination[]>([
-    { id: 'p1', name: 'Embalse el Yeso', description: 'Majestuoso embalse cordillerano de aguas color turquesa anidado en plena Cordillera de los Andes.', image: '/EmbalseYeso.jpg', price: 'Consultar valor' },
-    { id: 'p2', name: 'Termas de Colina', description: 'Atractivo poblado famoso por sus rústicas piscinas de aguas termales ricas en minerales naturales.', image: '/BanosMorales.jpg', price: 'Consultar valor' },
-    { id: 'p3', name: 'Termas el Plomo', description: 'Inolvidable ruta de senderismo ecológico y acceso panorámico al imponente glaciar colgante.', image: '/MonumentoElMorado.jpg', price: 'Consultar valor' },
-    { id: 'p4', name: 'Cascada de las Ánimas', description: 'Santuario pre-andino enfocado en el descanso premium, rodeado de caudalosos cruces de ríos.', image: '/CascadaAnimas.jpg', price: 'Consultar valor' },
-    { id: 'p5', name: 'Canopy', description: 'Aventura extrema volando sobre la copa de los árboles con vistas inigualables del ecosistema andino.', image: '/Canopy.jpg', price: 'Consultar valor' },
-    { id: 'p6', name: 'Rafting', description: 'Desciende por los emocionantes rápidos del río Maipo en una desafiante aventura de trabajo en equipo.', image: '/Rafting.jpg', price: 'Consultar valor' },
-    { id: 'p7', name: 'Cabalgatas', description: 'Explora los senderos cordilleranos a caballo, una experiencia única entre montañas nevadas y paisajes majestuosos.', image: '/Cabalgatas.jpg', price: 'Consultar valor' },
-    { id: 'p8', name: 'San José de Maipo', description: 'Capital comunal y centro histórico, famoso por su arquitectura colonial, su plaza de armas y su aire puro de montaña.', image: '/SanJoseMaipo.jpg', price: 'Consultar valor' },
+    { id: 'p1', name: 'Embalse el Yeso', description: 'Majestuoso embalse cordillerano de aguas color turquesa anidado en plena Cordillera de los Andes.', image: '/images/EmbalseYeso.jpg', price: 'Consultar valor' },
+    { id: 'p2', name: 'Termas de Colina', description: 'Atractivo poblado famoso por sus rústicas piscinas de aguas termales ricas en minerales naturales.', image: '/images/BanosMorales.jpg', price: 'Consultar valor' },
+    { id: 'p3', name: 'Termas el Plomo', description: 'Inolvidable ruta de senderismo ecológico y acceso panorámico al imponente glaciar colgante.', image: '/images/MonumentoElMorado.jpg', price: 'Consultar valor' },
+    { id: 'p4', name: 'Cascada de las Ánimas', description: 'Santuario pre-andino enfocado en el descanso premium, rodeado de caudalosos cruces de ríos.', image: '/images/CascadaAnimas.jpg', price: 'Consultar valor' },
+    { id: 'p5', name: 'Canopy', description: 'Aventura extrema volando sobre la copa de los árboles con vistas inigualables del ecosistema andino.', image: '/images/Canopy.jpg', price: 'Consultar valor' },
+    { id: 'p6', name: 'Rafting', description: 'Desciende por los emocionantes rápidos del río Maipo en una desafiante aventura de trabajo en equipo.', image: '/images/Rafting.jpg', price: 'Consultar valor' },
+    { id: 'p7', name: 'Cabalgatas', description: 'Explora los senderos cordilleranos a caballo, una experiencia única entre montañas nevadas y paisajes majestuosos.', image: '/images/Cabalgatas.jpg', price: 'Consultar valor' },
+    { id: 'p8', name: 'San José de Maipo', description: 'Capital comunal y centro histórico, famoso por su arquitectura colonial, su plaza de armas y su aire puro de montaña.', image: '/images/SanJoseMaipo.jpg', price: 'Consultar valor' },
   ]);
 
   return (
@@ -152,7 +152,7 @@ export default function DestinosPage() {
             />
             {/* Video Element (Fades in to 80%) */}
             <video
-              src="/Aricavideo01-Mp4.mp4"
+              src="/videos/Aricavideo01-Mp4.mp4"
               autoPlay
               muted
               loop
@@ -262,12 +262,13 @@ export default function DestinosPage() {
             <div className="aspect-video w-full relative group bg-[#020617] rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-[#d4af37]/20 hover:border-[#d4af37]/40 transition-all duration-700">
               {/* Placeholder image for promo */}
               <img
+                src="/images/EmbalseYeso.jpg"
                 alt="Promo Preview"
                 className={`absolute inset-0 w-full h-full object-cover transition-opacity ${isPromoVideoLoaded ? 'opacity-0 duration-[2000ms]' : 'opacity-100 duration-500'
                   }`}
               />
               <video
-                src="/Video-Promocajondelmaipo.mp4"
+                src="/videos/Video-Promocajondelmaipo.mp4"
                 autoPlay
                 muted
                 loop

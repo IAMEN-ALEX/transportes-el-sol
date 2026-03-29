@@ -26,7 +26,7 @@ const HeroVideo: React.FC = () => {
       {/* Contenedor del Video en 16:9 */}
       <div className="aspect-video w-full mb-10 relative group bg-black/40 rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/5 hover:border-[#d4af37]/30 transition-all duration-500">
         <video
-          src="/video_promo.mp4"
+          src="/videos/video_promo.mp4"
           autoPlay
           muted
           loop
