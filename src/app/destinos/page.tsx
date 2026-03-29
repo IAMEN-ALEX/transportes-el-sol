@@ -219,14 +219,14 @@ export default function DestinosPage() {
                       />
                     </div>
                   )}
-                    <div className="p-8 flex flex-col flex-1">
-                    <div className="flex justify-between items-start mb-6">
+                    <div className="p-6 flex flex-col flex-1">
+                    <div className="flex justify-between items-start mb-4">
                       <div className="w-10 h-10 rounded-full bg-[#d4af37]/10 flex items-center justify-center">
                         <MapPin className="w-5 h-5 text-[#d4af37]" />
                       </div>
                     </div>
-                    <h4 className="font-serif text-xl text-slate-200 mb-3 group-hover:text-[#d4af37] transition-colors">{dest.name}</h4>
-                    <p className="text-sm text-slate-500 font-light leading-relaxed mb-6">{dest.description}</p>
+                    <h4 className="font-serif text-xl text-slate-200 mb-2 group-hover:text-[#d4af37] transition-colors">{dest.name}</h4>
+                    <p className="text-sm text-slate-500 font-light leading-relaxed mb-4">{dest.description}</p>
                     {dest.price && (
                       <div className="mt-auto pt-6 border-t border-white/5">
                         <span className="text-[10px] text-[#d4af37] font-bold tracking-[0.2em] uppercase block mb-1">Valor Estimado</span>
@@ -315,14 +315,14 @@ export default function DestinosPage() {
                         />
                       </div>
                     )}
-                    <div className="p-8 flex flex-col flex-1">
-                      <div className="flex justify-between items-start mb-6">
+                    <div className="p-6 flex flex-col flex-1">
+                      <div className="flex justify-between items-start mb-4">
                         <div className="w-10 h-10 rounded-full bg-[#d4af37]/10 flex items-center justify-center">
                           <MapPin className="w-5 h-5 text-[#d4af37]" />
                         </div>
                       </div>
-                      <h4 className="font-serif text-xl text-slate-200 mb-3 group-hover:text-[#d4af37] transition-colors">{dest.name}</h4>
-                      <p className="text-sm text-slate-500 font-light leading-relaxed mb-6">{dest.description}</p>
+                      <h4 className="font-serif text-xl text-slate-200 mb-2 group-hover:text-[#d4af37] transition-colors">{dest.name}</h4>
+                      <p className="text-sm text-slate-500 font-light leading-relaxed mb-4">{dest.description}</p>
                       {dest.price && (
                         <div className="mt-auto pt-6 border-t border-white/5">
                           <span className="text-[10px] text-[#d4af37] font-bold tracking-[0.2em] uppercase block mb-1">Valor Estimado</span>
